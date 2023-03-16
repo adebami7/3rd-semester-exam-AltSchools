@@ -1,4 +1,4 @@
-# 3rdexam
+# exam
 
 ## Project setup
 ```
