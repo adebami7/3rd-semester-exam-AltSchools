@@ -59,5 +59,62 @@
   
   .btn {
     border-radius: 2rem;
-    font-size: 
+    font-size: 90%;
   }
+
+/* container for the list of repositories */
+.repo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* individual repository item */
+.repo-item {
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  transition: box-shadow 0.3s ease;
+}
+
+/* hover effect for repository item */
+.repo-item:hover {
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* repository name */
+.repo-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* repository description */
+.repo-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* repository language */
+.repo-language {
+  font-size: 12px;
+  color: #888;
+}
+
+/* pagination links */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* individual pagination link */
+.pagination-link {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 5px;
+}
