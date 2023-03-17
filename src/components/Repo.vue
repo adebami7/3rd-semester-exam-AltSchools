@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h1>{{ repo.name }}</h1>
+      <h1 class="reps">{{ repo.name }}</h1>
       <p>{{ repo.description }}</p>
       <p>{{ repo.language }}</p>
     </div>
@@ -29,8 +29,9 @@
   </script>
     
 <style>
-    h1{
-        color: rgba(1, 5, 21, 0.916);
+    .rep{
+        text-align: center;
+        color: rgba(2, 2, 63, 0.916);
         font-size: 22px;
         font-weight: bolder;
         padding-top: 20px;
@@ -39,7 +40,7 @@
     }
 
     p{
-        font-size: 14px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
 
