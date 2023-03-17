@@ -3,7 +3,7 @@
     <router-view />
   </div>
   <div>
-    <h4>Repositories</h4>
+    <!-- <h4>Repositories</h4> -->
   </div>
 </template>
 
