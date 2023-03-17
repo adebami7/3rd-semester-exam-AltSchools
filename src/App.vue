@@ -19,4 +19,11 @@
   margin: 0 auto;
   padding: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+    padding: 10px;
+  }
+}
 </style>

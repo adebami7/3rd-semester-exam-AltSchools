@@ -55,4 +55,30 @@
     font-size: 12px;
     color: #888;
     }
+
+    @media (max-width: 768px) {
+  .rep {
+    font-size: 18px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .repo-description {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .repo-language {
+    font-size: 10px;
+  }
+}
+
+
+
+
 </style>

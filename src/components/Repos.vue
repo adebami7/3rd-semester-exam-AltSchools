@@ -142,6 +142,41 @@ button:disabled {
   cursor: not-allowed;
 }
   
+
+@media screen and (max-width: 768px) {
+  .links {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .links li {
+    width: 100%;
+    max-width: 300px;
+  }
+  .page-links {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header h1 {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .links {
+    padding: 5px;
+    margin: 0;
+    border-radius: 0;
+  }
+  .links li {
+    margin-top: 10px;
+    border-radius: 0;
+  }
+}
+ 
 </style>
 
  
