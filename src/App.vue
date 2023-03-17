@@ -2,15 +2,21 @@
   <div id="app">
     <router-view />
   </div>
+  <div>
+    <h4>Repositories</h4>
+  </div>
 </template>
 
-<style src="./style.css">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<script>
+  export default{
+    name: 'App'
+  }
+</script>
+
+<style>
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 </style>

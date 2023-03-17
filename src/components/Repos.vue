@@ -1,13 +1,13 @@
 <template>
-    <div>
+    <div class="header">
       <h1>My GitHub Repositories</h1>
       <ul>
         <li v-for="repo in repos" :key="repo.id">
           <router-link :to="'/repo/' + repo.name">{{ repo.name }}</router-link>
         </li>
       </ul>
-      <button @click="loadMore">Load More</button>
     </div>
+    <button @click="loadMore">Load More</button>
     <div>
       <div class="row">
         <div class="col-md-8">
@@ -91,5 +91,106 @@
   }
   </script>
 
+
+<style >
+    .header {
+        background-color: rgba(1, 5, 21, 0.916);
+        padding-bottom: 20px;
+    }
+    .header h1{
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    ul{
+        color: rgb(16, 3, 90);
+    }
+    li{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        border-radius: 20%;
+    }
+    li:hover{
+        background-color: #f5f5f5;
+
+    }
+    a{
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+    .badge {
+    font-size: 90%;
+    }
+  
+    .badge-primary {
+    background-color: #007bff;
+    }
+  
+    .badge-secondary {
+    background-color: #6c757d;
+    }
+    
+    .display-4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    font-weight: 500;
+  }
+  
+  .card-text {
+    font-size: 90%;
+  }
+  
+  .btn {
+    border-radius: 2rem;
+    font-size: 90%;
+  }
+
+  button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #011a35;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+  
+</style>
 
  
